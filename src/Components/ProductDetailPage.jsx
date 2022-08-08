@@ -19,7 +19,7 @@ export default function ProductDetailPage() {
   }
   return (
     <div>
-      {editProduct &&<ProductUpdateForm editProduct={editProduct} data = {data} />}
+      {editProduct &&<ProductUpdateForm editProduct={editProduct} setEditProduct={setEditProduct} data = {data} />}
       {isFetching && <p>Loading Single Product ...</p>}
       {isSuccess && data && <div>
         <h2>Product Name: {data.title}</h2>
